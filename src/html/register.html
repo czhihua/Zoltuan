@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../lib/jquery-3.3.1.min.js"></script>
+    <script src="../js/img_ver.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/register.js"></script>
+</head>
+
+<body>
+    <div id="ZOLreg">
+        <!-- 头部 -->
+        <header>
+            <div id="head">
+                <div class="head content">
+                    <!-- //logo -->
+                    <h1 class="logo">
+                        <a href="../index.html">
+                            <img src="../img/logo_130x60.png" alt="">
+                            <p>中关村在线商城</p>
+                        </a>
+                    </h1>
+
+                    <div id="go-log">
+                        已经有Z商城账号？
+                        <a href="login.html">立即登录</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 主体 -->
+        <main>
+            <div id="register-wrap">
+                <div class="register">
+                    <div class="reg-title">30秒快速注册，加入Z商城</div>
+                    <div class="reg-inner">
+                        <!-- 注册表左侧 -->
+                        <div class="regbox-left">
+                            <div class="rl-tab">
+                                <div class="fl-title">
+                                    <span>
+                                        用手机号注册</span>
+                                </div>
+                            </div>
+                            <!-- 手机号 -->
+                            <div class="res-inputs clearfix">
+                                <div class="res-text">
+                                    <label>
+                                        <em>*</em>手机号：</div>
+                                </label>
+                                <input class="res-input res-phone" type="text">
+                                <span class="res-message">请填写有效11位手机号码</span>
+                                <span class="res-emind">请填写手机号码</span>
+                            </div>
+                            <!-- 验证码 -->
+                            <div class="res-inputs clearfix">
+                                <div class="res-text">
+                                    <label>
+                                        <em>*</em>验证码：</div>
+                                </label>
+                                <div data-isok="on" class="res-input res-verify">
+                                    <!-- 跟随 -->
+                                    <div class="follow-wrap">
+                                        <span class="follow">
+
+                                            <em></em>
+                                        </span>
+                                        <i></i>
+                                    </div>
+                                    <span class="written">点击进行验证</span>
+                                    <div class="attestation" style="display: none;">
+                                        <div class="verBox">
+                                            <div id="imgVer" style="display:inline-block;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="res-message"></span>
+                                <span class="res-emind">请完成验证</span>
+                            </div>
+                            <div class="res-inputs clearfix">
+                                <div class="res-text">
+                                    <label>
+                                        <em>*</em>密码：</div>
+                                </label>
+                                <input class="res-input res-psw" type="password">
+                                <span class="res-message">请填写密码</span>
+                                <span class="res-emind">6-16位字母和数字的组合，不可用特殊字符</span>
+                            </div>
+                            <div class="res-inputs clearfix">
+                                <div class="res-text">
+                                    <label>
+                                        <em>*</em>确认密码：</div>
+                                </label>
+                                <input class="res-input res-psw2" type="password">
+                                <span class="res-message">请填写确认密码</span>
+                                <span class="res-emind">请再输入密码</span>
+                            </div>
+                            <label class="agreement">
+                                <input type="checkbox" checked="checked">
+                                <span>同意
+                                    <a href="javascript:;">《商城用户协议》</a>
+                                    <a href="javascript:;">《隐私权说明》</a>
+                                </span>
+                            </label>
+                            <input type="button" id="register-btn" value="注册">
+                        </div>
+                        <!-- 注册表右侧 -->
+                        <div class="regbox-right">
+                            <p>如果您已经注册，请
+                                <a href="javascript:;">直接登录</a>
+                                或者用以下方式登录：
+                            </p>
+                            <div class="login-list">
+                                <a class="weixin" href="javascript:;">微信</a>
+                                <a class="sina" href="javascript:;">新浪微博</a>
+                                <a class="qq" href="javascript:;">腾讯QQ</a>
+                                <a class="alipay" href="javascript:;">支付宝</a>
+                                <a class="baidu" href="javascript:;">百度</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="ft-box">
+                <div class="ft-box content">
+                    <nav class="ft-left">
+                        <li>
+                            <a href="javascript:;">关于Z商城</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">联系我们</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">帮助中心</a>
+                        </li>
+                    </nav>
+                    <p>©2019. 中关村在线 版权所有</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

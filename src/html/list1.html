@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/list1.css">
+    <script src="../lib/jquery-3.3.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/z_common.js"></script>
+    <script src="../js/list1.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- 顶部 -->
+        <div id="header-top">
+            <div class="header-top content">
+                <div class="head-top-l">
+                    <span class="ht-title">商城首页</span>
+                    <span class="ht-login" title="">
+                        <i>Hi~欢迎来到Z商城，请</i>
+                        <a href="javascript:;">登录</a>
+                    </span>
+                    <span class="ht-register ht-res">
+                        <a href="register.html">免费注册</a>
+                    </span>
+                    <span class="ht-register ht-quit" style="display: none">
+                        <a href="list1.html">退出</a>
+                    </span>
+                </div>
+                <div class="head-top-r">
+                    <nav class="ht-nav">
+                        <li>
+                            <a class="ahover" href="javascript:;">我的订单</a>
+                        </li>
+                        <li class="htn-li-buyC">
+                            <a href="javascript:;" class="htn-buyC">买家中心
+                                <i></i>
+                            </a>
+                            <span class="htn-buy-b">
+                                <a href="javascript:;">关注商品&nbsp;
+                                    <b>35</b>
+                                </a>
+                                <a href="javascript:;">关注店铺&nbsp;
+                                    <b>35</b>
+                                </a>
+                            </span>
+
+                        </li>
+                        <li>
+                            <a class="ahover" href="javascript:;">购物车0件</a>
+                        </li>
+                        <li>
+                            <a class="ahover" href="javascript:;">帮助中心</a>
+                        </li>
+                        <li class="fengex"></li>
+                        <li class="htn-phone">
+
+                            <a href="javascript:;">
+                                <b></b>手机商城
+                                <i></i>
+                            </a>
+                            <span class="htn-phone-ewm">
+                                <img src="../img/phone_wechat.png" alt="">
+                            </span>
+
+                        </li>
+                        <li>
+                            <a class="ahover" href="javascript:;">中关村在线</a>
+                        </li>
+                        <li>
+                            <a class="ahover" href="javascript:;">招商合作</a>
+                        </li>
+                        <li class="htn-service">
+                            <a href="javascript:;">联系客服
+                                <i></i>
+                            </a>
+                            <span class="htn-phone-num">400-688-1999</span>
+                        </li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- 搜索及logo及入口 -->
+        <div id="header-content">
+            <div class="header-content content">
+                <h1>
+                    <a href="../index.html">Z商城</a>
+                </h1>
+                <div id="search-box">
+                    <input id="search-text" type="text" value="DIY限时抢" placeholder="">
+                    <a id="search-btn" href="javascript:;">搜索</a>
+                    <nav id="search-brand">
+                        <li>
+                            <a href="javascript:;">华为手机</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">DIY主机降1000元</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">畅玩7X立省130元</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">超极本降1400元</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">华为Mate 10</a>
+                        </li>
+                    </nav>
+                </div>
+                <nav id="quick-entry">
+                    <li>
+                        <a class="qe-myOrder" href="javascript:;">
+                            <i></i>
+                            我的订单</a>
+                    </li>
+                    <li>
+                        <a class="qe-myCoupon" href="javascript:;">
+                            <i></i>
+                            我的优惠券</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="qe-cart">
+                            <em>0</em>
+                            <i></i>
+                            购物车</a>
+                    </li>
+                </nav>
+            </div>
+        </div>
+        <!-- 导航栏 -->
+        <div id="header-bottom">
+            <div id="header-nav" class=" content">
+                <div id="hnav-menu">
+                    <i></i>
+                    全部分类
+                    <nav class="sub-Menus">
+                        <li>
+                            <a href="javascript:;">
+                                <i></i>
+                                手机
+                                <em></em>
+                            </a>
+                            <div class="menu3 menu3-one">
+                                <div class="menu-type">
+                                    <a href="javascript:;">手机</a>
+                                    <a href="javascript:;">移动电源</a>
+                                    <a href="javascript:;">蓝牙耳机</a>
+                                    <a href="javascript:;">手机贴膜</a>
+                                    <a href="javascript:;">保护膜</a>
+                                    <a href="javascript:;">数据线</a>
+                                    <a href="javascript:;">充电器</a>
+                                    <a href="javascript:;">手机维修</a>
+                                </div>
+                                <a class="menu3_pic" href="javascript:;">
+                                    <img src="../img/menu3_1.jpg" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i></i>
+                                电脑
+                                <em></em>
+                            </a>
+                            <div class="menu3 menu3-two">
+                                <div class="menu-type">
+                                    <a href="javascript:;">笔记本电脑</a>
+                                    <a href="javascript:;">游戏本</a>
+                                    <a href="javascript:;">超极本</a>
+                                    <a href="javascript:;">二合一平板电脑</a>
+                                    <a href="javascript:;">平板电脑</a>
+                                    <a href="javascript:;">品牌整机</a>
+                                    <a href="javascript:;">一体机</a>
+                                    <a href="javascript:;">笔记本配件</a>
+                                    <a href="javascript:;">笔记本电池</a>
+                                    <a href="javascript:;">笔记本包</a>
+                                </div>
+                                <a class="menu3_pic" href="javascript:;">
+                                    <img src="../img/menu3_2.jpg" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i></i>
+                                DIY
+                                <em></em>
+                            </a>
+                            <div class="menu3 menu3-three">
+                                <div class="menu-type">
+                                    <a href="javascript:;">DIY主机</a>
+                                    <a href="javascript:;">团购钜惠</a>
+                                    <a href="javascript:;">硬盘</a>
+                                    <a href="javascript:;">电源</a>
+                                    <a href="javascript:;">散热器</a>
+                                    <a href="javascript:;">CPU</a>
+                                    <a href="javascript:;">机箱</a>
+                                    <a href="javascript:;">主板</a>
+                                    <a href="javascript:;">内存</a>
+                                    <a href="javascript:;">固态硬盘</a>
+                                    <a href="javascript:;">显卡</a>
+                                </div>
+                                <a class="menu3_pic" href="javascript:;">
+                                    <img src="../img/menu3_3.jpg" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i></i>
+                                数码
+                                <em></em>
+                            </a>
+                            <div class="menu3 menu3-four">
+                                <div class="menu-type">
+                                    <a href="javascript:;">数码相机</a>
+                                    <a href="javascript:;">摄像机</a>
+                                    <a href="javascript:;">相机镜头</a>
+                                    <a href="javascript:;">相机电池</a>
+                                    <a href="javascript:;">闪光灯</a>
+                                    <a href="javascript:;">滤镜</a>
+                                    <a href="javascript:;">电子教育</a>
+                                    <a href="javascript:;">拍立得</a>
+                                    <a href="javascript:;">相机包</a>
+                                    <a href="javascript:;">相机遥控器</a>
+                                    <a href="javascript:;">闪存卡</a>
+                                </div>
+                                <a class="menu3_pic" href="javascript:;">
+                                    <img src="../img/menu3_4.jpg" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i></i>
+                                外设
+                                <em></em>
+                            </a>
+                            <div class="menu3 menu3-five">
+                                <div class="menu-type">
+                                    <a href="javascript:;">键盘</a>
+                                    <a href="javascript:;">鼠标</a>
+                                    <a href="javascript:;">键鼠套装</a>
+                                    <a href="javascript:;">鼠标垫</a>
+                                    <a href="javascript:;">耳机</a>
+                                    <a href="javascript:;">音箱</a>
+                                    <a href="javascript:;">投影仪</a>
+                                    <a href="javascript:;">录音笔</a>
+                                    <a href="javascript:;">路由器</a>
+                                    <a href="javascript:;">移动硬盘</a>
+                                    <a href="javascript:;">U盘</a>
+                                    <a href="javascript:;">摄像头</a>
+                                    <a href="javascript:;">手柄</a>
+                                </div>
+                                <a class="menu3_pic" href="javascript:;">
+                                    <img src="../img/menu3_5.jpg" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i></i>
+                                智能
+                                <em></em>
+                            </a>
+                            <div class="menu3 menu3-six">
+                                <div class="menu-type">
+                                    <a href="javascript:;">智能手环</a>
+                                    <a href="javascript:;">智能手表</a>
+                                    <a href="javascript:;">VR眼镜</a>
+                                    <a href="javascript:;">健康监测</a>
+                                    <a href="javascript:;">智能机器人</a>
+                                    <a href="javascript:;">智能电子秤</a>
+                                    <a href="javascript:;">智能灯</a>
+                                    <a href="javascript:;">智能投影</a>
+                                    <a href="javascript:;">HTC VIVE</a>
+                                </div>
+                                <a class="menu3_pic" href="javascript:;">
+                                    <img src="../img/menu3_6.jpg" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i></i>
+                                其他
+                                <em></em>
+                            </a>
+                        </li>
+                    </nav>
+                </div>
+                <nav class="hnav-nav">
+                    <li>
+                        <a href="javascript:;">首页</a>
+                    </li>
+                    <li>
+                        <a class="Aactive" href="javascript:;">团购</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">电子竞技</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">本地优选</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">家电优选</a>
+                    </li>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="today">
+            <div class="today content">
+                <!-- 吸顶标题 -->
+                <div id="today-title">
+                    <div class="tt-tab">
+                        <div class="tt-type">
+                            <a class="active" href="javascript:;">
+                                <span>全部</span>
+                            </a>
+                            <a href="javascript:;">
+                                <span>手机</span>
+                            </a>
+                            <a href="javascript:;">
+                                <span>电脑</span>
+                            </a>
+                            <a href="javascript:;">
+                                <span>DIY</span>
+                            </a>
+                            <a href="javascript:;">
+                                <span>数码</span>
+                            </a>
+                            <a href="javascript:;">
+                                <span>外设</span>
+                            </a>
+                            <a href="javascript:;">
+                                <span>智能</span>
+                            </a>
+                            <a href="javascript:;">
+                                <span>其他</span>
+                            </a>
+                        </div>
+                        <div class="tt-deputy" style="display:none">
+                            <a href="javascript:;">
+                                <span>全部</span>
+                            </a>
+                            <a href="javascript:;">
+                                <span>笔记本</span>
+                            </a>
+                            <a href="javascript:;">
+                                <span>平板电脑</span>
+                            </a>
+                        </div>
+                        <div class="tt-deputy" style="display: none">
+                            <a href="javascript:;">
+                                <span>全部</span>
+                            </a>
+                            <a href="javascript:;">
+                                <span>数码周边产品</span>
+                            </a>
+                            <a href="javascript:;">
+                                <span>电脑外设</span>
+                            </a>
+                        </div>
+                    </div>
+                    <nav class="tt-nav">
+                        <li class="tt-default">
+                            <a class="active" href="javascript:;">
+                                <span>默认</span>
+                            </a>
+                        </li>
+                        <li class="tt-newest">
+                            <a class="" href="javascript:;">
+                                <span>最新团购</span>
+                            </a>
+                        </li>
+                        <li class="tt-sales">
+                            <a href="javascript:;">
+                                <span>销量</span>
+                                <i></i>
+                            </a>
+                        </li>
+                        <li class="tt-price">
+                            <a href="javascript:;">
+                                <span>价格</span>
+                                <i></i>
+                            </a>
+                        </li>
+                    </nav>
+                </div>
+                <!-- 商品列表 -->
+                <div class="lanjiaz" style="display: none;height: 600px;">
+                    <img src="../img/lan.gif" alt="">
+                </div>
+                <nav id="goods-nav">
+                    <!-- <li> -->
+                    <!-- <a href="javascript:;"> -->
+                    <!-- 商品图片 -->
+                    <!-- <div class="gn-pic"> -->
+                    <!-- <img src="img/today1.jpg" alt=""> -->
+                    <!-- </div> -->
+                    <!-- 商品概要 -->
+                    <!-- <div class="gn-brief"> -->
+                    <!-- 名字 -->
+                    <!-- <p class="gn-name">拯救者Y7000 正装野兽 强劲性能 尽兴吃鸡唱完Apex</p> -->
+                    <!-- <p class="gn-intro">144Hz电竞屏 2T+128G固态双硬盘 1050TI独立显卡正版office</p> -->
+                    <!-- 价格购买 -->
+                    <!-- <div class="gn-detail">
+                                    <div class="detail-left">
+                                        <span class="gn-current">￥6039</span>
+                                        <span class="gn-original">￥6399</span>
+                                        <span class="gn-save">立省2000</span>
+                                    </div>
+                                    <span class="gn-btn">
+                                        马上抢
+                                    </span>
+                                </div>
+                            </div> -->
+                    <!-- 倒计时时间 -->
+                    <!-- <div class="gn-time">
+                                <span>剩余：
+                                    <em>00</em>天
+                                    <em>00</em>时
+                                    <em>00</em>分
+                                    <em>00</em>秒</span>
+                            </div> -->
+                    <!-- </a>
+                    </li> -->
+                    <!-- <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li> -->
+                </nav>
+
+                <!-- 点击加载更多 -->
+                <div id="gn-paging">
+                    <!-- <span class="active">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>下一页</span> -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- 底部 -->
+    <footer>
+        <div id="ft-group">
+            <div class="ft-group content">
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd>
+                        <a href="javascript:;">购物流程</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">常见问题</a>
+                    </dd>
+
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd>
+                        <a href="javascript:;">申请退款</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">售后政策</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">售后问题</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>团购特点</dt>
+                    <dd>
+                        <a href="javascript:;">团购优势</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">参团效果</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>商务合作</dt>
+                    <dd>
+                        <a href="javascript:;">媒体合作</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">团购合作</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>商城服务</dt>
+                    <dd>
+                        400-688-1999
+                    </dd>
+                    <dd>
+                        工作日(9:00-18:00)
+                    </dd>
+                    <dd>
+                        <a class="weibo" href="javascript:;">关注新浪微博</a>
+                    </dd>
+                </dl>
+                <div id="ft-service">
+                    <p class="code">
+                        <img src="../img/zolDingYue.jpg" alt="">
+                    </p>
+                    <p> 微信关注：Z商城</p>
+                    <p>扫码赢优惠 订单时时查</p>
+                </div>
+            </div>
+        </div>
+        <!-- 公用底部 -->
+        <div id="ft-bottom">
+            <!-- 小组件 -->
+            <nav id="widget">
+                <!-- 客服服务 -->
+                <li class="wg-service">
+                    <a href="javascript:;">客服服务</a>
+                    <div>
+                        <p class="pic">
+                            <img src="../img/zolDingYue.jpg" alt="">
+                        </p>
+                        <p>扫码咨询在线客服</p>
+                        <p class="phone">客服电话</p>
+                        <p class="phone-num">400-688-1999</p>
+                    </div>
+                </li>
+                <!-- 返回顶部 -->
+                <li class="return">
+                    <a href="javascript:;"></a>
+                </li>
+            </nav>
+            <div class="ft-bottom content">
+                <nav class="fn-entry">
+                    <li>
+                        <a href="javascript:;">中关村在线</a>
+
+                    </li>
+                    <li>
+                        <a href="javascript:;">Z商城</a>
+
+                    </li>
+                    <li>
+                        <a href="javascript:;">团购</a>
+
+                    </li>
+                    <li>
+                        <a href="javascript:;">产品报价</a>
+
+                    </li>
+                    <li>
+                        <a href="javascript:;">论坛</a>
+
+                    </li>
+                    <li>
+                        <a href="javascript:;">问答</a>
+                    </li>
+                </nav>
+                <nav class="ft-help">
+                    <li>
+                        <a href="javascript:;">关于Z商城</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">帮助中心</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">联系我们</a>
+                    </li>
+                </nav>
+                <span class="copyright"> ©2019 中关村在线 版权所有.
+                    <a href="javascript:;">京ICP证150096号</a>
+                    京ICP备14061128号
+                    <a href="javascript:;">网络文化经营许可证京网文[2016]1631-199</a>
+                </span>
+                <a href="javascript:;" class="Advertising">广告</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

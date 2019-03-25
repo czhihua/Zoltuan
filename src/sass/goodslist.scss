@@ -1,0 +1,222 @@
+@charset "utf-8";
+// 商品列表头部信息
+*{margin: 0;padding: 0;
+box-sizing: border-box;}
+#goods-title{
+    width: 100%;
+    margin-top: 28px;
+}
+.goods-title{
+    // 标题头部
+    .gt-top{
+        overflow: hidden;
+        .gtt-left{
+            float: left;
+                font-size: 12px;
+            i{
+                display: inline-block;
+            }
+        }
+        .gtt-right{ 
+            float: right;
+            font-size: 12px;
+        }
+    }
+    // 中部类型
+    .gt-content{
+        height: 80px;
+        border: 1px solid #E6E6E6;
+        margin-top: 25px;
+        .gtc-title{
+            width: 110px;
+            float: left;
+            height: 80px;
+            border-right: 1px solid #e6e6e6;
+            background: #F7F7F7;
+            padding-top: 15px;
+            text-align: right;
+        }
+        .gtc-nav{
+            width: 1085px;
+            padding-left: 25px;
+            padding-left: 106px;
+            overflow: hidden;
+            float: left;
+            font-size: 12px;
+            a{
+                display: block;
+                float: left;
+                padding-right: 40px;
+                height: 38px;
+                line-height: 38px;
+                color: #666666;
+                &:hover{
+                    color: #c00;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .gt-bottom{
+        margin-top: 50px;
+        span{
+            display: inline-block;
+            padding: 0 25px;
+            background-position: 0 -263px;
+            background: url(img/zolcom_list_ico.png) no-repeat;
+            background-position: 0 -263px;
+            height: 26px;
+            line-height: 26px;
+            font-size: 16px;
+        }
+        a{
+            display: inline-block;
+            height: 27px;
+            color: #666666;
+            font-size: 14px;
+            margin-right: 20px;
+            i{
+                display: block;
+                width: 21px;
+                height: 21px;
+                float: left;
+                margin-right:8px; 
+            }
+        }
+          a:nth-of-type(1) i{
+                background: url(img/icon1.png) no-repeat;
+            }
+            
+           a:nth-of-type(2) i{
+                background:url(img/icon2.png) no-repeat;
+            }
+           a:nth-of-type(3) i{
+                background: url(img/icon3.png) no-repeat;
+            }
+            a:nth-of-type(4) i{
+                background: url(img/icon4.png) no-repeat;
+            }
+            a:nth-of-type(5) i{
+                background: url(img/icon5.png) no-repeat;
+            }
+
+    }
+}
+
+#goods-box{
+    width: 100%;
+}
+.goods-box{
+    margin-top: 14px;
+    // 右侧
+    .gb-left{
+        float: left;
+        width: 962px;
+        // 切换外层
+        .gb-tab{
+            height: 42px;
+            border: 1px solid #E6E6E6;
+            background: #F7F7F7;
+        }
+        .gb-nav{
+            li{
+                float: left;
+                 border-right: 1px solid #F7F7F7;
+                border-left: 1px solid #F7F7F7;
+                position: relative;
+                height: 40px;
+            }
+            .active{
+                border-right: 1px solid #EBEBEB;
+                border-left: 1px solid #EBEBEB;
+                color: #CC0000;
+                background: #FFFFFF;
+            }
+             li:nth-child(1){
+                border-left:none;
+            }
+            //默认以及价格高低
+            .default{
+                padding: 0 15px;
+                height: 40px;
+                line-height: 40px;
+                font-size: 12px;
+                color: #333333;
+            }
+
+            // 发货地
+            .delivery{
+                padding: 0 27px 0 15px;
+                line-height: 39px;
+                font-size: 12px;
+                cursor: pointer;
+                color: #333333;
+                i{
+                    display: block;
+                    width: 7px;
+                    height: 4px;
+                    position: absolute;
+                    top: 17px;
+                    right: 15px;
+                    background:url(img/zolcom_list_ico.png);
+                    background-position: -12px 0;
+                }
+            }
+
+            // 发货地下拉
+            .deliPull{
+                position: absolute;
+                display: none;
+                top: 40px;
+                background: #fff;
+                width: 348px;
+                height: 196px;
+                padding: 10px 10px 5px;
+                border: 1px solid #e6e6e6;
+                z-index: 9;
+                border-top: none;
+                left: 0;
+                dl{
+                    font-size:12px;
+                    margin: 8px 0;
+                    overflow: hidden; 
+                    dt,dd{
+                        float: left;
+                    }
+                    dt{
+                        color: #999;
+                        margin-right: 8px;
+                    }
+                    dd{
+                        a{
+                            display: block;
+                            float: left;
+                            padding: 0 5px;
+                            margin: 0 6px;
+                            color: #333;
+                            &:hover{
+                                background: #f33;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .deliveryLi{
+                &:hover{
+                    background: #fff;
+                }
+                &:hover .deliPull{
+                    display: block;
+                }
+            }
+        }
+
+    }
+    // 左侧
+    .gb-right{
+        float: right;
+    }
+}

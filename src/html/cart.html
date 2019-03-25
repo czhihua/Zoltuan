@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <script src="../lib/jquery-3.3.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/z_common.js"></script>
+    <script src="../js/cart.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- 顶部 -->
+        <div id="header-top">
+            <div class="header-top content">
+                <div class="head-top-l">
+                    <span class="ht-title">商城首页</span>
+                    <span class="ht-login" title="">
+                        <i>Hi~欢迎来到Z商城，请</i>
+                        <a href="javascript:;">登录</a>
+                    </span>
+                    <span class="ht-register ht-res">
+                        <a href="register.html">免费注册</a>
+                    </span>
+                    <span class="ht-register ht-quit" style="display: none">
+                        <a href="javascript:;">退出</a>
+                    </span>
+                </div>
+                <div class="head-top-r">
+                    <nav class="ht-nav">
+                        <li>
+                            <a class="ahover" href="javascript:;">我的订单</a>
+                        </li>
+                        <li class="htn-li-buyC">
+                            <a href="javascript:;" class="htn-buyC">买家中心
+                                <i></i>
+                            </a>
+                            <span class="htn-buy-b">
+                                <a href="javascript:;">关注商品&nbsp;
+                                    <b>35</b>
+                                </a>
+                                <a href="javascript:;">关注店铺&nbsp;
+                                    <b>35</b>
+                                </a>
+                            </span>
+
+                        </li>
+                        <li>
+                            <a class="ahover" href="javascript:;">购物车0件</a>
+                        </li>
+                        <li>
+                            <a class="ahover" href="javascript:;">帮助中心</a>
+                        </li>
+                        <li class="fengex"></li>
+                        <li class="htn-phone">
+
+                            <a href="javascript:;">
+                                <b></b>手机商城
+                                <i></i>
+                            </a>
+                            <span class="htn-phone-ewm">
+                                <img src="../img/phone_wechat.png" alt="">
+                            </span>
+
+                        </li>
+                        <li>
+                            <a class="ahover" href="javascript:;">中关村在线</a>
+                        </li>
+                        <li>
+                            <a class="ahover" href="javascript:;">招商合作</a>
+                        </li>
+                        <li class="htn-service">
+                            <a href="javascript:;">联系客服
+                                <i></i>
+                            </a>
+                            <span class="htn-phone-num">400-688-1999</span>
+                        </li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- 搜索及logo及入口 -->
+        <div id="header-content">
+            <div class="header-content content">
+                <h1>
+                    <a href="../index.html">Z商城</a>
+                </h1>
+                <nav class="flow-nav">
+                    <li class="active">
+                        <span>加入购物车</span>
+                        <i></i>
+                    </li>
+                    <li>
+                        <span>下订单</span>
+                        <i></i>
+                    </li>
+                    <li>
+                        <span>去付款</span>
+                        <i></i>
+                    </li>
+                    <li>
+                        <span>确认收货</span>
+                        <i></i>
+                    </li>
+                    <li>
+                        <span>评价</span>
+                        <i></i>
+                    </li>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="shopping_list">
+        <div class="shopping_list content">
+            <div class="shopping_be" style="display: block">
+                <!-- <div class="cart_title">
+                    <p>购物车状态
+                        <span>(0/30)</span>
+                    </p>
+                    <div class="cart-total">
+                        <span>总计(不含运费)
+                            <em>￥2699</em>
+                        </span>
+                        <a href="javascript:;">去结算</a>
+                    </div>
+                </div> -->
+                <!-- 购物车头部 -->
+                <!-- <div class="cart_list"> -->
+                <!-- <div class="cl-title">
+                        <span class="Goods">所有商品</span>
+                        <span class="price">单价（元）</span>
+                        <span class="number">数量</span>
+                        <span class="time">优惠</span>
+                        <span class="subtotal">小计（元）</span>
+                        <span class="operation">操作</span>
+                    </div> -->
+                <!-- <div class="clt-inner"> -->
+                <!-- <div class="clt-shop">
+                            <p>
+                                <input type="checkbox">
+                                <span>店铺：</span>
+                                <a href=" javascript:; ">
+                                    甲骨龙旗舰店
+                                </a>
+                            </p>
+                        </div> -->
+                <!-- <div class="ctl_list ">
+                            <div class="ctl-details"> -->
+                <!-- //复选框 -->
+                <!-- <input type="checkbox"> -->
+                <!-- 照片 -->
+                <!-- <div class="ct-pic ">
+                                    <img src="../img/today5.jpg " alt=" ">
+                                </div> -->
+                <!-- //商品说明 -->
+                <!-- <div class="ct-intro ">
+                                    <a href="javascript:; " class="goodsName ">华硕（ASUS）Y5000超薄本15.6英寸商务学生办公游戏轻薄便携笔记本</a>
+                                    <p class="support">
+                                        <i></i>
+                                    </p>
+                                    <p class="color ">
+                                        颜色：蓝色
+                                    </p>
+                                    <p class="color ">
+                                        套装：官方标配
+                                    </p>
+                                </div> -->
+                <!-- 单价 -->
+
+                <!-- </div> -->
+                <!-- 单价 -->
+                <!-- <div class="unit_price ">
+                                <p class="original ">3099.00</p>
+                                <p class="current ">2999.00</p>
+                            </div> -->
+
+                <!-- 数量 -->
+                <!-- <div class="input_num ">
+
+                                <a href="javascript:; " class="minus ">-</a>
+                                <input type="number ">
+                                <a href="javascript:; " class="add ">+</a>
+
+                            </div> -->
+
+                <!-- 时间 -->
+                <!-- <div class="group-time ">
+                                <span>团购</span>
+                                <p>
+                                    <em>00</em>小时
+                                    <em>00</em>分
+                                    <em>00</em>秒
+                                </p>
+                            </div> -->
+
+                <!-- 小计 -->
+                <!-- <div class="goods_subtotal ">
+                                9000
+                            </div> -->
+
+                <!-- 操作 -->
+                <!-- <div class="list_operation ">
+                                <a href="javascript:; ">移入收藏夹</a>
+                                <a href="javascript:; ">删除</a>
+                            </div> -->
+
+                <!-- </div> -->
+
+                <!-- </div> -->
+
+                <!-- 底部结算 -->
+                <!-- <div class="clt-bottom">
+
+                        <div class="clt-top">
+                            <p class="clt-total">
+                                商品总价
+                                <i>（不含运费）：</i>
+                                <em>￥9999</em>
+                            </p>
+                        </div>
+
+                        <div class="clt-accounts">
+                            <p class="ca-left">
+                                <a class="colse-btn" href="javascript:;">批量删除</a>
+                            </p>
+                            <p class="ca-right">
+                                <a class="continue" href="javascript:;">
+                                    <<继续购物 </a>
+                                        <span class="accounts-btn">去结算</span>
+                            </p>
+                        </div>
+                    </div> -->
+                <!-- </div> -->
+
+            </div>
+
+
+            <div class="empty" style="display: none">
+                <h3>您的购物车里还没有商品，您可以：</h3>
+                <p>去
+                    <a href="javascript:history.go(-1);">挑选商品</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <footer>
+        <div class="foot content">
+            <p class="f-help">
+                <a href="javascript:;">关于商城</a>
+                <a href="javascript:;">关于商城</a>
+                <a href="javascript:;">关于商城</a>
+                <a href="javascript:;">关于商城</a>
+                <a href="javascript:;">关于商城</a>
+                <a href="javascript:;">关于商城</a>
+            </p>
+            <p class="serial">2019中关村在线 版权所有. 京ICP备09041801号-182
+                <a href="javascript:;">京ICP证010391号</a>
+            </p>
+            <p class="f-pic">
+                <a href="javascript:;">
+                    <img src="../img/beian.png" alt="">
+                </a>
+                <a href="javascript:;">
+                    <img src="../img/beian.png" alt="">
+                </a>
+                <a href="javascript:;">
+                    <img src="../img/beian.png" alt="">
+                </a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

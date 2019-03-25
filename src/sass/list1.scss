@@ -1,0 +1,80 @@
+
+@charset "utf-8";
+
+// 主体
+main{
+    margin-top: 29px;
+    position: relative;
+    .lanjiaz{
+       padding-left: 500px;
+       height: 200px;
+       margin-top: 30px;
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+// 商品类型
+.tt-tab{
+    border: 1px solid #EDEDED;
+    margin-bottom:10px; 
+    .tt-type{
+        overflow: hidden;
+        height: 36px;
+        line-height: 36px;
+        background: #f2f2f2;
+        padding-left: 15px;
+        a{
+            display: block;
+            float: left;
+            padding: 0 15px;
+            color: #666;
+            font-size: 12px;
+            border-top: 2px solid #f2f2f2;
+        }
+        .active{
+            background: #fafafa;
+            border-top-color: #ff3333;
+            color: #fe5372;
+        }
+    }
+    .tt-deputy{
+        height: 34px; 
+        padding-left: 15px;
+        line-height: 34px;
+        background: #fff;
+        a{
+            display: block;
+            float: left;
+            padding: 0 10px;
+            font-size: 12px;
+            margin: 0 9px;
+            color: #666;
+        }
+        .active{
+            background: #ff3333;
+            color: #fff;
+        }
+    }
+}
+// 页码
+#gn-paging{
+    background: #fff;
+    text-align: center;
+    height: 34px;
+    line-height: 34px;
+    span{
+        display: inline-block;
+        padding: 0 14px;
+        text-align: center;
+        font-size: 12px;
+        border: 1px solid #e1e1e1;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    .active{
+        background: #c00;
+        color: #fff;
+    }
+}
